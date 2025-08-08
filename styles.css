@@ -1,0 +1,32 @@
+a{
+    text-decoration: none;
+    color: inherit;
+    padding: 30px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+  
+}
+
+a:hover {
+    background-color: darkviolet;
+    color: white;
+    transform: scale(1.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
