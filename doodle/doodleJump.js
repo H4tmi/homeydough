@@ -362,12 +362,12 @@ function handleRestartClick(event) {
 
 function saveScore(score) {
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "processScores.php", true);
+    xhr.open("POST", "/login/processes/processScores.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             console.log("Score saved successfully: " + score);
         }
     };
-    xhr.send("game=doodleJump&score=" + score + "&username=" + encodeURIComponent(localStorage.getItem('username')));
+    xhr.send("game=doodleJump&score=" + encodeURIComponent(score));
 }
